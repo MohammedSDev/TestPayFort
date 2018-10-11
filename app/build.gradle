@@ -32,35 +32,22 @@ dependencies {
     implementation(deps.appcompat) {
         transitive = true;
     }
+    /*my base dependencies*/
     implementation deps.design
     implementation deps.support13
     implementation deps.multidex
     implementation deps.kotlin
     implementation deps.http
-    implementation deps.activityFragment
-    implementation deps.snackbar
-    implementation deps.dialog
-    implementation deps.pref
-    implementation deps.archLifecycleExtension
-    implementation deps.chromeTab
     implementation deps.support
     implementation deps.image
-    implementation deps.baseUI
-    implementation deps.baseAdapter
     implementation deps.commonUtil
-    implementation deps.cardView
     implementation deps.constraintLayout
 
-//    implementation  'com.android.support:multidex:1.0.2'
+    /*forpay dependencies*/
     api project(path: ':FORTSDKv1.4.4')
-//    implementation  ('com.android.support:appcompat-v7:+'){
-//        transitive = true;
-//    }
 
     api 'com.victor:lib:1.0.1'
-//    api 'com.google.code.gson:gson:2.8.0'
     api 'com.shamanland:fonticon:0.1.8'
-//    api 'com.android.support:design:27.0.2'
     api('com.nispok:snackbar:2.11.+') {
         // exclusion is not necessary, but generally a good idea.
         exclude group: 'com.google.android', module: 'support-v4'
@@ -68,6 +55,8 @@ dependencies {
     api 'com.google.guava:guava:19.0'
     api 'org.bouncycastle:bcprov-jdk16:1.46'
     api 'commons-codec:commons-codec:1.10'
+
+
 
     //api ssl exceptioni
     implementation 'com.google.android.gms:play-services-auth:11.8.0'

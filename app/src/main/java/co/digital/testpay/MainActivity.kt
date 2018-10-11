@@ -15,6 +15,8 @@ import webconnect.com.webconnect.listener.OnWebCallback
 import java.security.MessageDigest
 /**
  * this activity is PayFort Demo
+ * you need to download FORTSDK and add dependencies
+ * https://docs.payfort.com/docs/mobile-sdk/build/index.html#before-starting-the-integration
  *
  * */
 class MainActivity : AppCompatActivity(), OnWebCallback {
@@ -85,7 +87,6 @@ class MainActivity : AppCompatActivity(), OnWebCallback {
         /**
          * you should get 'access_code' from your payfort account
          * */
-
         param.put("access_code", "MedoIi22p98sdqXbrtPt")
         param.put("device_id", deviceId)
         param.put("language", "en")
@@ -94,6 +95,7 @@ class MainActivity : AppCompatActivity(), OnWebCallback {
          * */
         param.put("merchant_identifier", "WwmmkkwW")
         param.put("service_command", "SDK_TOKEN")
+
 
         val sb = StringBuilder()
         /**
